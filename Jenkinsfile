@@ -17,6 +17,18 @@ node () {
 			} 
  		} 
 	}
+
+	stage ('Test1 - Quality Analysis') {
+		withMaven(maven: 'maven') { 
+				if(isUnix()) {
+					sh "mvn sonar:sonar" 
+				} else { 
+					bat "mvn sonar:sonar" 
+				} 
+			} 
+	}
+
+
 	stage ('Test1 - Post build actions') {
 /*
 Please note this is a direct conversion of post-build actions. 
