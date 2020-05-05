@@ -35,4 +35,11 @@
     </repository>
   </distributionManagement>
 
+
+<scm>
+  	<connection>scm:git:https://github.com/mcandries/jenkins-test.git</connection>
+  	<url>https://github.com/mcandries/jenkins-test</url>
+  	<developerConnection>scm:git:https://github.com/mcandries/jenkins-test.git</developerConnection>
+  </scm>
+
 </project>
